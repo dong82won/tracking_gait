@@ -1,0 +1,22 @@
+[project]
+name = "gait-tracking"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dong82won", email = "2dongwon@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ahrs>=0.4.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "scipy>=1.18.1",
+]
+
+[project.scripts]
+gait-tracking = "gait_tracking:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
